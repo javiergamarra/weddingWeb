@@ -33,7 +33,7 @@ var SlideShow = function(slides) {
   		        this._presentationCounter.textContent = currentIndex;
   		    }
   		      window.location.hash = this.current;
-  		    for (var x = currentIndex-1; x < currentIndex + 7; x++) {
+  		    for (var x = currentIndex-1; x < currentIndex + 6; x++) {
   		      if (this._slides[x-4]) {
   		        this._slides[x-4].setState(Math.max(0, x-currentIndex));
   		      }

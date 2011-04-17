@@ -1,3 +1,13 @@
+.slide.far-past {
+	display: block;
+	margin-left: -2400px;
+}
+
+.slide.far-future {
+	display: block;
+	margin-left: 1500px;
+}
+
 #landing-slide p {
 	font-size: 35px;
 }
@@ -71,65 +81,19 @@ body {
 .slide:nth-child(even) {
 	border-radius: 10px 30px 10px 30px;
 	-moz-border-radius: 10px 20px 10px 20px;
+	background: red;
 }
 
 .slide:nth-child(odd) {
 	border-radius: 20px 10px 20px 10px;
 	-moz-border-radius: 20px 10px 20px 10px;
-}
-
-.slide .counter {
-	color: #999999;
-	position: absolute;
-	left: 20px;
-	bottom: 20px;
-	display: block;
-	font-size: 12px;
-	width: 100%;
-}
-
-.slide:not  (.transitionSlide  ) .counter:after {
-	content: '';
-	width: 32px;
-	height: 32px;
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	position: absolute;
-	bottom: 0;
-	right: 45px;
-	opacity: 0.25;
-}
-
-.styling .counter:after {
-	background:
-		url(http://www.html5rocks.com/static/images/identity/classes_32/HTML5_Styling_32.png);
+	background: blue;
 }
 
 .slide.transitionSlide h2 {
 	font-size: 40px;
 	margin: 0;
 	line-height: 10px;
-}
-
-.slide.transitionSlide p {
-	margin: 0;
-}
-
-.slide.transitionSlide img {
-	opacity: 0.25;
-	width: 64px;
-	height: 64px;
-}
-
-.slide.far-past {
-	display: block;
-	margin-left: -2400px;
-}
-
-.slide.past {
-	visibility: visible;
-	display: block;
-	margin-left: -1400px;
 }
 
 .slide.current {
@@ -142,15 +106,26 @@ body {
 	opacity: 1.0;
 }
 
+.slide.past {
+	visibility: visible;
+	display: block;
+	margin-left: -1400px;
+}
+
 .slide.future {
 	visibility: visible;
 	display: block;
 	margin-left: 500px;
 }
 
-.slide.far-future {
+.slide.up {
 	display: block;
 	margin-left: 1500px;
+}
+
+.slide.down {
+	display: block;
+	margin-left: -2400px;
 }
 
 section,footer {
@@ -168,7 +143,7 @@ footer {
 	margin: 20px 0 0 30px;
 }
 
-#presentation-counter {
+/*#presentation-counter {
 	color: #fff;
 	font: 100px 'Yanone Kaffeesatz';
 	letter-spacing: 1px;
@@ -177,4 +152,15 @@ footer {
 	width: 100%;
 	text-align: center;
 }
+
+.slide .counter {
+	color: #999999;
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	display: block;
+	font-size: 12px;
+	width: 100%;
+}*/
+
 
