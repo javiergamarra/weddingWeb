@@ -13,7 +13,6 @@ var SlideShow = function(slides) {
   
 
   SlideShow.prototype = {
-  		  _presentationCounter: query('#presentation-counter'),
   		  _slides: [],
   		  _getCurrentIndex: function() {
   		    var me = this;
@@ -27,11 +26,7 @@ var SlideShow = function(slides) {
   		  },
   		  _update: function(dontPush) {
   		    var docElem = document.documentElement;
-  		    var elem = document.elementFromPoint( docElem.clientWidth / 2, docElem.clientHeight / 2);
   		    var currentIndex = this._getCurrentIndex();
-  		    if (elem && elem.className != 'presentation') {
-  		        this._presentationCounter.textContent = currentIndex;
-  		    }
   		      window.location.hash = this.current;
   		    for (var x = currentIndex-1; x < currentIndex + 6; x++) {
   		      if (this._slides[x-4]) {
@@ -61,8 +56,6 @@ var SlideShow = function(slides) {
   		    }
   		  },
   		};
-
-
   
   // Initialize
 var slideshow = new SlideShow(queryAll('.slide'));
