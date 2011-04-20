@@ -32,11 +32,11 @@ body {
 	top: 0;
 	position: absolute;
 	display: none;
-	-webkit-transition: -webkit-transform 1.5s ease-in-out;
+	/*-webkit-transition: -webkit-transform 1.5s ease-in-out;
 	-moz-transition: -moz-transform 1.5s ease-in-out;
 	-o-transition: -o-transform 1.5s ease-in-out;
 	transition: transform 1.5s ease-in-out;
-}
+*/}
 
 .slide {
 	display: none;
@@ -57,15 +57,10 @@ body {
 	-webkit-transform: scale(0.8) translateZ(0);
 	-moz-transform: scale(0.8);
 	-o-transform: scale(0.8);
-	-webkit-transition-property: margin, -webkit-transform, opacity;
-	-webkit-transition-duration: 0.3s, 0.3s, 0.3s;
-	-webkit-transition-timing-function: ease-in-out;
-	-moz-transition-property: margin, -moz-transform, opacity;
-	-moz-transition-duration: 0.3s, 0.3s, 0.3s;
-	-moz-transition-timing-function: ease-in-out;
-	-o-transition-property: margin, -moz-transform, opacity;
-	-o-transition-duration: 0.3s, 0.3s, 0.3s;
-	-o-transition-timing-function: ease-in-out;
+	-webkit-transition: all 2s cubic-bezier(0.260, 0.860, 0.440, 0.985);
+	-moz-transition: all 2s cubic-bezier(0.260, 0.860, 0.440, 0.985);
+	-o-transition: all 2s cubic-bezier(0.260, 0.860, 0.440, 0.985);
+	transition: all 2s cubic-bezier(0.260, 0.860, 0.440, 0.985);
 }
 
 .slide:nth-child(even) {
@@ -94,26 +89,44 @@ body {
 	opacity: 1.0;
 }
 
-.slide.past {
+.slide.left-slide {
 	visibility: visible;
 	display: block;
-	margin-left: -1400px;
+	margin-left: -1300px;
 }
 
-.slide.future {
+.slide.veryleft-slide {
 	visibility: visible;
 	display: block;
-	margin-left: 500px;
+	margin-left: -2600px;
 }
 
-.slide.far-past {
+.slide.right-slide {
+	visibility: visible;
 	display: block;
-	margin-left: -2400px;
+	margin-left: 400px;
 }
 
-.slide.far-future {
+.slide.veryright-slide {
+	visibility: visible;
 	display: block;
-	margin-left: 1500px;
+	margin-left: 2000px;
+}
+
+.slide.down-slide {
+	visibility: visible;
+	display: block;
+	margin-left: -450px;
+	margin-top: 350px;
+	height: 100px;
+}
+
+.slide.up-slide {
+	visibility: visible;
+	display: block;
+	margin-left: -450px;
+	margin-top: -450px;
+	height: 100px;
 }
 
 section,footer {
@@ -131,8 +144,8 @@ footer {
 	margin: 20px 0 0 30px;
 }
 
-#landing-slide p {
-	font-size: 85px;
+p {
+	font-size: 155px;
 	text-align: center;
 }
 

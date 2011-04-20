@@ -10,12 +10,9 @@ var Slide = function(node) {
 Slide.prototype = {
 	_node: null,
 	_currentState: '',
-	_states: [ 'distant-slide', 'far-past','past', 'current', 'future','far-future', 'distant-slide' ],
-	setState: function(state) {
-		if (typeof state != 'string') {
-			state = this._states[state];
-		}
-		removeClass(this._node, this._states);
+	_styles: [ 'veryleft-slide','veryright-slide','down-slide', 'left-slide','current', 'right-slide', 'up-slide' ],
+	setStyle: function(state) {
+		removeClass(this._node, this._styles);
 		addClass(this._node, state);
 		this._currentState = state;
 	},
