@@ -2,28 +2,66 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>HTML5 Presentation</title>
-<link href="css/moon.css" class="theme" rel="stylesheet" />
+<title>Ruben & Cristina Wedding</title>
+<link href="css/base.css" rel="stylesheet" />
+<link href="css/theme1.css" class="theme" rel="stylesheet" />
+<link href="css/theme2.css" class="theme" rel="stylesheet" />
+<link href="css/theme3.css" class="theme" rel="stylesheet" />
+<link href="css/theme9.css" class="theme" rel="stylesheet" />
 </head>
 <body>
 <div class="presentation">
 <div class="slides">
-<div class="slide" id="down-slide"><section>
-<p>ABAJO</p>
+<div class="slide" id="down-slide" onclick="javascript:slideshow.down()"><section>
+<p>Comentadnos cuando vais a venir (WIP)</p>
 </section></div>
 
-<div class="slide" id="left-slide"><section>
-<p>IZQUIERDA</p>
+<div class="slide" id="left-slide" onclick="javascript:slideshow.prev()"><section>
+<p>Comeremos en el Hotel la Vega</p>
+<div id="post-image">
+<div id="figure"><img src="images/LaVega.jpg" class="image" /> <span
+	class="caption"> BLA BLA BLA </span></div>
+</div>
+<p>Si sois cel&iacute;acos avisadnos cuanto antes!</p>
 </section></div>
-<div class="slide" id="landing-slide"><section>
-<p>&#161; NOS CASAMOS !</p>
-</section></div>
-<div class="slide" id="right-slide"><section>
-<p>DERECHA</p>
+<div class="slide" id="landing-slide"
+	onclick="javascript:slideshow.reset()"><section>
+<p class="title">&#161; NOS CASAMOS !</p>
+
+<ul style="list-style-type: none; text-align: left;">
+	<li>Seguro que quieres saber... <span id="right-arrow"
+		class="arrows">d&oacute;nde</span></li>
+	<li>o en que... <span id="left-arrow" class="arrows">restaurante</span></li>
+	<li>o... <span id="up-arrow" class="arrows">c&oacute;mo
+	eramos</span></li>
+</ul>
+<img src="images/default.jpg" /> </section></div>
+
+<div class="slide" id="right-slide"
+	onclick="javascript:slideshow.next()"><section>
+<p>Hemos elegido la Iglesia de la Santa Vera Cruz</p>
+<div id="post-image">
+<div id="figure"><img src="images/VeraCruz.jpg" class="image" />
+<span class="caption"> BLA BLA BLA </span></div>
+</div>
+<div id="post-image">
+<div id="figure"><img src="images/MapaVeraCruz.jpg" class="image" />
+<span class="caption"> BLA BLA BLA </span></div>
+</div>
+<p style="clear: both">No se puede tirar arroz u otro tipo de legumbres</p>
 </section></div>
 
-<div class="slide" id="up-slide"><section>
-<p>ARRIBA</p>
+<div class="slide" onclick="javascript:slideshow.up()" id="up-slide"><section>
+<p>As&iacute; eramos</p>
+<div id="post-image">
+<div id="figure"><img src="images/YoungCris.jpg" class="image" />
+<span class="caption"> BLA BLA BLA </span></div>
+</div>
+<div id="post-image">
+<div id="figure"><img src="images/YoungCrisRuben.jpg"
+	class="image" /> <span class="caption"> BLA BLA BLA </span></div>
+</div>
+
 </section></div>
 <div class="slides"><script language="JavaScript"
 	src="js/utilities.js"></script> <script language="JavaScript"

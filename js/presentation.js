@@ -8,6 +8,12 @@ var SlideShow = function(slides) {
     var _t = this;
     doc.addEventListener('keydown', 
         function(e) { _t.handleKeys(e); }, false);
+    query('#right-arrow').addEventListener('click',
+	              function() { _t.next(); }, false);
+    query('#left-arrow').addEventListener('click',
+            function() { _t.prev(); }, false);
+    query('#up-arrow').addEventListener('click',
+            function() { _t.up(); }, false);
     this._update2();
   };
   
@@ -34,12 +40,14 @@ var SlideShow = function(slides) {
     		  var centerSlide =this._slides[2];
     		  var rightSlide =this._slides[3];
     		  var upSlide =this._slides[4];
+    		  downSlide.setStyle('down-slide');
+  			   upSlide.setStyle('up-slide');
     		  if (this._nameSlides[this._getCurrentIndex()] == 'landing-slide') {
-    			   downSlide.setStyle('down-slide');
+    			  downSlide.setStyle('down-slide');
+      			   upSlide.setStyle('up-slide');
         		   leftSlide.setStyle('left-slide');
         		   centerSlide.setStyle('current');
         		   rightSlide.setStyle('right-slide');
-        		   upSlide.setStyle('up-slide');
     		  }
     		  if (this._nameSlides[this._getCurrentIndex()] == 'left-slide') {
    			   downSlide.setStyle('down-slide');
@@ -71,7 +79,6 @@ var SlideShow = function(slides) {
      		  }
     		  
   		  },
-  		  current: 0,
   		  next: function() {
   			var slide;
 			 if (this._nameSlides[this._getCurrentIndex()] == 'left-slide') {
@@ -108,6 +115,23 @@ var SlideShow = function(slides) {
  			 }
  			this._update2(query(slide));
   		},
+  		 current: 0,
+		  	reset: function() {
+  			if(window.event.srcElement.className != 'arrows') {
+			this._update2(query('#landing-slide'));
+  			}
+ 		  },
+  		 changeTheme: function() {
+            var linkEls = queryAll('.theme');
+            var sheetIndex = 0;
+            linkEls.forEach(function(stylesheet, i) {
+              if (!stylesheet.disabled) {
+                sheetIndex = i;
+              }
+            });
+            linkEls[sheetIndex].disabled = true;
+            linkEls[(sheetIndex + 1) % linkEls.length].disabled = false;
+          },
   		  handleKeys: function(e) {
   		    switch (e.keyCode) {
   		      case 37: // left arrow
@@ -119,6 +143,8 @@ var SlideShow = function(slides) {
 		        this.next(); break;
   		      case 40: // space
 		        this.down(); break;
+  		    case 84: // T
+                this.changeTheme(); break;
   		    }
   		  },
   		};

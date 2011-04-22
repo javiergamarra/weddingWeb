@@ -1,0 +1,14 @@
+@CHARSET "ISO-8859-1";
+
+/*ROJO*/
+.slide {
+	background: #f6f7dd;
+}
+
+.presentation {
+	background: #f5222c;
+}
+
+body {
+	font-family: 'League Gothic'
+}
