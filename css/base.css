@@ -59,10 +59,10 @@ body {
 	-webkit-transform: scale(0.8) translateZ(0);
 	-moz-transform: scale(0.8);
 	-o-transform: scale(0.8);
-	-webkit-transition: all 2s cubic-bezier(0.260, 0.860, 0.440, 0.985);
-	-moz-transition: all 2s cubic-bezier(0.260, 0.860, 0.440, 0.985);
-	-o-transition: all 2s cubic-bezier(0.260, 0.860, 0.440, 0.985);
-	transition: all 2s cubic-bezier(0.260, 0.860, 0.440, 0.985);
+	-webkit-transition: all 1.5s cubic-bezier(0.260, 0.860, 0.440, 0.985);
+	-moz-transition: all 1.5s cubic-bezier(0.260, 0.860, 0.440, 0.985);
+	-o-transition: all 1.5s cubic-bezier(0.260, 0.860, 0.440, 0.985);
+	transition: all 1.5s cubic-bezier(0.260, 0.860, 0.440, 0.985);
 }
 
 .slide:nth-child(even) {
