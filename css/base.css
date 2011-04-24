@@ -1,5 +1,5 @@
 body {
-	font: 40px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	font: 30px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
 	padding: 0;
 	margin: 0;
 	width: 100%;
@@ -10,6 +10,15 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-family: 'League Gothic';
 	text-align: center;
+}
+
+header {
+	font-weight: bold;
+	font-size: 40px;
+}
+
+p {
+	font-family: Verdana;
 }
 
 .presentation {
@@ -100,7 +109,7 @@ body {
 }
 
 .image {
-	height: 300px;
+	height: 200px;
 	padding: 10px;
 }
 
@@ -190,6 +199,10 @@ footer {
 	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+	-webkit-transform: scale(1.8);
+	-moz-transform: scale(1.8);
+	-o-transform: scale(1.8);
+	margin: 0 auto;
 }
 
 #figure .caption {

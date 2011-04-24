@@ -12,8 +12,12 @@
 	background: -moz-linear-gradient(top, #3a2855, #67687a);
 }
 
-body {
+header {
 	font-family: 'Poor Richard'
+}
+
+p {
+	font-family: Verdana
 }
 
 .title {
