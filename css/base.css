@@ -188,6 +188,13 @@ footer {
 	text-align: center;
 }
 
+#weddingDate {
+	color: white;
+	position: relative;
+	bottom: -170px;
+	left: -200px;
+}
+
 @font-face {
 	font-family: 'League Gothic';
 	src: url('League_Gothic.otf') format('truetype');
