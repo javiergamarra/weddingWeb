@@ -64,18 +64,18 @@ var SlideShow = function(slides) {
           		   rightSlide.setStyle('current');
       		  }
     		  if (this._nameSlides[this._getCurrentIndex()] == 'up-slide') {
-      			   downSlide.setStyle('');
+      			   downSlide.setStyle('verydown-slide');
       			   upSlide.setStyle('current');
-          		   leftSlide.setStyle('');
+          		   leftSlide.setStyle('veryleft-slide');
           		   centerSlide.setStyle('down-slide');
-          		   rightSlide.setStyle('');
+          		   rightSlide.setStyle('veryright-slide');
       		  }
     		  if (this._nameSlides[this._getCurrentIndex()] == 'down-slide') {
      			   downSlide.setStyle('current');
-     			   upSlide.setStyle('');
-         		   leftSlide.setStyle('');
+     			   upSlide.setStyle('veryup-slide');
+         		   leftSlide.setStyle('veryleft-slide');
          		   centerSlide.setStyle('up-slide');
-         		   rightSlide.setStyle('');
+         		   rightSlide.setStyle('veryright-slide');
      		  }
     		  
   		  },

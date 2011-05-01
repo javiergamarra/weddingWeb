@@ -1,5 +1,5 @@
 body {
-	font: 30px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	font: 30px Verdana, sans-serif;
 	padding: 0;
 	margin: 0;
 	width: 100%;
@@ -8,7 +8,7 @@ body {
 	left: 0px;
 	top: 0px;
 	-webkit-font-smoothing: antialiased;
-	font-family: 'League Gothic';
+	font-family: 'Poor Richard';
 	text-align: center;
 }
 
@@ -54,7 +54,7 @@ p {
 	position: absolute;
 	overflow: hidden;
 	width: 900px;
-	height: 700px;
+	height: 650px;
 	left: 50%;
 	top: 50%;
 	margin-top: -350px;
@@ -125,6 +125,22 @@ p {
 	margin-left: -2600px;
 }
 
+.slide.veryup-slide {
+	visibility: visible;
+	display: block;
+	margin-top: -650px;
+	margin-left: -450px;
+	height: 100px;
+}
+
+.slide.verydown-slide {
+	visibility: visible;
+	display: block;
+	margin-left: -450px;
+	height: 100px;
+	margin-top: 300px;
+}
+
 .slide.right-slide {
 	visibility: visible;
 	display: block;
@@ -141,7 +157,7 @@ p {
 	visibility: visible;
 	display: block;
 	margin-left: -450px;
-	margin-top: 350px;
+	margin-top: 300px;
 	height: 100px;
 }
 
@@ -154,7 +170,6 @@ p {
 }
 
 section,footer {
-	font: Arial;
 	font-weight: normal;
 	color: #3f3f3f;
 	text-shadow: white 0px 1px 0px, rgba(0, 0, 0, 0.2) 0 2px 5px;
@@ -199,10 +214,6 @@ footer {
 	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
-	-webkit-transform: scale(1.8);
-	-moz-transform: scale(1.8);
-	-o-transform: scale(1.8);
-	margin: 0 auto;
 }
 
 #figure .caption {

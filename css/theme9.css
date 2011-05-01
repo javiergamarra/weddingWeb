@@ -13,11 +13,15 @@
 }
 
 header {
-	font-family: 'Poor Richard'
+	font-family: 'Poor Richard';
 }
 
-p {
-	font-family: Verdana
+header p {
+	margin-top: 0px;
+}
+
+body,p {
+	font-family: 'Poor Richard'
 }
 
 .title {
