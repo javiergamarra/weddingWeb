@@ -40,41 +40,41 @@ var SlideShow = function(slides) {
     		  var centerSlide =this._slides[2];
     		  var rightSlide =this._slides[3];
     		  var upSlide =this._slides[4];
-    		  downSlide.setStyle('down-slide');
-  			   upSlide.setStyle('up-slide');
+    		  downSlide.setStyle('vertical down-slide');
+  			   upSlide.setStyle('vertical up-slide');
     		  if (this._nameSlides[this._getCurrentIndex()] == 'landing-slide') {
-    			  downSlide.setStyle('down-slide');
-      			   upSlide.setStyle('up-slide');
+    			  downSlide.setStyle('vertical down-slide');
+      			   upSlide.setStyle('vertical up-slide');
         		   leftSlide.setStyle('left-slide');
         		   centerSlide.setStyle('current');
         		   rightSlide.setStyle('right-slide');
     		  }
     		  if (this._nameSlides[this._getCurrentIndex()] == 'left-slide') {
-   			   downSlide.setStyle('down-slide');
-   			   upSlide.setStyle('up-slide');
+   			   downSlide.setStyle('vertical down-slide');
+   			   upSlide.setStyle('vertical up-slide');
        		   leftSlide.setStyle('current');
        		   centerSlide.setStyle('right-slide');
        		   rightSlide.setStyle('veryright-slide');
    		  }
     		  if (this._nameSlides[this._getCurrentIndex()] == 'right-slide') {
-      			   downSlide.setStyle('down-slide');
-      			   upSlide.setStyle('up-slide');
+      			   downSlide.setStyle('vertical down-slide');
+      			   upSlide.setStyle('vertical up-slide');
           		   leftSlide.setStyle('veryleft-slide');
           		   centerSlide.setStyle('left-slide');
           		   rightSlide.setStyle('current');
       		  }
     		  if (this._nameSlides[this._getCurrentIndex()] == 'up-slide') {
-      			   downSlide.setStyle('verydown-slide');
+      			   downSlide.setStyle('vertical verydown-slide');
       			   upSlide.setStyle('current');
           		   leftSlide.setStyle('veryleft-slide');
-          		   centerSlide.setStyle('down-slide');
+          		   centerSlide.setStyle('vertical down-slide');
           		   rightSlide.setStyle('veryright-slide');
       		  }
     		  if (this._nameSlides[this._getCurrentIndex()] == 'down-slide') {
      			   downSlide.setStyle('current');
-     			   upSlide.setStyle('veryup-slide');
+     			   upSlide.setStyle('vertical veryup-slide');
          		   leftSlide.setStyle('veryleft-slide');
-         		   centerSlide.setStyle('up-slide');
+         		   centerSlide.setStyle('vertical up-slide');
          		   rightSlide.setStyle('veryright-slide');
      		  }
     		  
