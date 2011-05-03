@@ -218,7 +218,7 @@ section {
 
 .panel {
 	opacity: 1.0;
-	background-color: #ffffff;
+	background-color: #3a2855;
 	z-index: 100;
 	left: 0px;
 	position: relative;
@@ -229,6 +229,7 @@ section {
 	width: 700px;
 	margin: 0 auto;
 	visibility: hidden;
+	overflow: hidden;
 }
 
 .panelImage {
