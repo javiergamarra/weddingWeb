@@ -22,10 +22,10 @@
 </script>
 </head>
 <body>
-<div class="presentation">
+<div class="presentation" id="web">
 <div class="slides">
-<div class="slide vertical" id="down-slide" onclick="javascript:slideshow.down()"><section>
-<header>
+<div class="slide vertical" id="down-slide"
+	onclick="javascript:slideshow.down()"><section> <header>
 <p>Comentarios...</p>
 </header>
 <p>Para confirmar vuestra asistencia o cualquier duda estamos en
@@ -36,10 +36,10 @@ rubencab69@hotmail.com o criscasa81@gmail.com</p>
 <header>
 <p>Comeremos en el Hotel la Vega</p>
 </header>
-<div id="figure"><img src="images/LaVega.jpg" class="image"
+<div class="figure"><img src="images/LaVega.jpg" class="image" onclick="javascript:createPanel(this);"
 	style="height: 250px;" /> <span class="caption"> Este es el
 hotel La Vega, la fachada frontal </span></div>
-<div id="figure"><img src="images/MapaIglesiaHotel.jpg"
+<div class="figure"><img src="images/MapaIglesiaHotel.jpg" onclick="javascript:createPanel(this);"
 	style="height: 250px;" class="image" /><span class="caption">
 En este mapa se muestra el camino para ir de la iglesia al hotel </span></div>
 
@@ -65,13 +65,13 @@ alimentaria, avisadnos</p>
 	onclick="javascript:slideshow.next()"><section> <header>
 <p>Hemos elegido la Iglesia de la Santa Vera Cruz</p>
 </header>
-<div id="figure"><img src="images/VeraCruz.jpg" class="image" />
+<div class="figure"><img src="images/VeraCruz.jpg" class="image" onclick="javascript:createPanel(this);" />
 <span class="caption"> Este es el aspecto del exterior de la
 iglesia </span></div>
-<div id="figure"><img src="images/VirgenVeraCruz.jpg"
+<div class="figure"><img src="images/VirgenVeraCruz.jpg" onclick="javascript:createPanel(this);"
 	class="image" /> <span class="caption"> La Virgen de la Vera
 Cruz </span></div>
-<div id="figure"><img src="images/MapaVeraCruz.jpg" class="image" />
+<div class="figure"><img src="images/MapaVeraCruz.jpg" class="image" onclick="javascript:createPanel(this);" />
 <span class="caption"> En este mapa pod&eacute;is ver la
 situaci&oacute;n de la iglesia con respecto a las dos entradas desde la
 Avenida Salamanca </span></div>
@@ -79,20 +79,21 @@ Avenida Salamanca </span></div>
 por lo que no permite tirar comida: arroz, legumbres...</p>
 <a onclick="javascript:slideshow.reset()" href="">Volver</a> </section></div>
 
-<div class="slide vertical " onclick="javascript:slideshow.up()" id="up-slide"><section><header>
+<div class="slide vertical " onclick="javascript:slideshow.up()"
+	id="up-slide"><section><header>
 <p>As&iacute; eramos</p>
 </header>
-<div id="figure"><img src="images/YoungCris.jpg" class="image" />
+<div class="figure"><img src="images/YoungCris.jpg" class="image" onclick="javascript:createPanel(this);" />
 <span class="caption"> Cristina hace 1 d&eacute;cada </span></div>
-<div id="figure"><img src="images/YoungCrisRuben.jpg"
+<div class="figure"><img src="images/YoungCrisRuben.jpg" onclick="javascript:createPanel(this);"
 	class="image" /> <span class="caption"> Nuestra primera
 escapada</span></div>
-<div style="clear:both"><a onclick="javascript:slideshow.reset()"
+<div style="clear: both"><a onclick="javascript:slideshow.reset()"
 	href="">Volver</a></div>
 </section></div>
-<div class="slides"><script language="JavaScript"
-	src="js/utilities.js"></script> <script language="JavaScript"
-	src="js/slide.js"></script> <script language="JavaScript"
-	src="js/presentation.js"></script>
+<script language="JavaScript" src="js/panel.js"></script> <script
+	language="JavaScript" src="js/utilities.js"></script> <script
+	language="JavaScript" src="js/slide.js"></script> <script
+	language="JavaScript" src="js/presentation.js"></script>
 </body>
 </html>
