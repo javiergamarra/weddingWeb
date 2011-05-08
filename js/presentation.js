@@ -6,14 +6,27 @@ var SlideShow = function(slides) {
 	    });
     this.current = (!this.current) ? "landing-slide" : this.current.replace('#', '');
     var _t = this;
-    doc.addEventListener('keydown', 
-        function(e) { _t.handleKeys(e); }, false);
-    query('#right-arrow').addEventListener('click',
-	              function() { _t.next(); }, false);
-    query('#left-arrow').addEventListener('click',
-            function() { _t.prev(); }, false);
-    query('#up-arrow').addEventListener('click',
-            function() { _t.up(); }, false);
+    
+    if (doc.addEventListener){
+    	  doc.addEventListener('keydown', 
+    		        function(e) { _t.handleKeys(e); }, false);
+        query('#right-arrow').addEventListener('click',
+          function() { _t.next(); }, false);
+        query('#left-arrow').addEventListener('click',
+    function() { _t.prev(); }, false);
+        query('#up-arrow').addEventListener('click',
+    function() { _t.up(); }, false);
+    	} else if (doc.attachEvent){
+    		doc.attachEvent('keydown',  function(e) { _t.handleKeys(e); });
+    		 query('#right-arrow').attachEvent('click',
+    		          function() { _t.next(); });
+    		        query('#left-arrow').attachEvent('click',
+    		    function() { _t.prev(); });
+    		        query('#up-arrow').attachEvent('click',
+    		        		  function() { _t.up(); }, false);
+    	}
+
+
     this._update2();
   };
   
@@ -152,6 +165,14 @@ var SlideShow = function(slides) {
   
 var slideshow = new SlideShow(queryAll('.slide'));
 
-document.addEventListener('DOMContentLoaded', function() {
-	query('.slides').style.display = 'block';
-}, false);
+
+if (doc.addEventListener){
+	document.addEventListener('DOMContentLoaded', function() {
+		query('.slides').style.display = 'block';
+	}, false);
+	} else if (doc.attachEvent){
+		document.attachEvent('DOMContentLoaded', function() {
+			query('.slides').style.display = 'block';
+		});
+	}
+
