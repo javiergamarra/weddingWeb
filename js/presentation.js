@@ -129,8 +129,13 @@ var SlideShow = function(slides) {
  			this._update2(query(slide));
   		},
   		 current: 0,
-		  	reset: function() {
-  			if(window.event.srcElement.className != 'arrows') {
+		  	reset: function(evt) {
+  			
+  			if(!evt) evt=window.event; 
+  			var target = evt.srcElement;
+  			if (!evt.srcElement) target = evt.target 
+  			
+  			if(target.className != 'arrows') {
 			this._update2(query('#landing-slide'));
   			}
  		  },

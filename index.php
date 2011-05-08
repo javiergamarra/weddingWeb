@@ -83,17 +83,17 @@ while ($row = mysql_fetch_array($result)) {
 				
 				});		
 			});			
-		</script> <a onclick="javascript:slideshow.reset()" href="">Volver</a>
+		</script> <a onclick="javascript:slideshow.reset(event)" href="">Volver</a>
 </section></div>
 
 <div class="slide" id="left-slide" onclick="javascript:slideshow.prev()"><section>
 <header>
 <p>Comeremos en el Hotel la Vega</p>
 </header>
-<div class="figure"><img src="images/LaVega.jpg" class="image"
+<div class="figure"><img src="images/HotelLaVega.jpg" class="image"
 	onclick="javascript:createPanel(this);" style="height: 250px;" /> <span
 	class="caption"> Este es el hotel La Vega, la fachada frontal </span></div>
-<div class="figure"><img src="images/MapaIglesiaHotel.jpg"
+<div class="figure"><img src="images/HotelMapaIglesia.jpg"
 	onclick="javascript:createPanel(this);" style="height: 250px;"
 	class="image" /><span class="caption"> En este mapa se muestra el
 camino para ir de la iglesia al hotel </span></div>
@@ -101,9 +101,9 @@ camino para ir de la iglesia al hotel </span></div>
 <p style="clear: both">Si padec&eacute;is alguna alergia alimentaria,
 avisadnos</p>
 <p>El hotel ofrece un precio especial en habitaciones para invitados</p>
-<a onclick="javascript:slideshow.reset()" href="">Volver</a> </section></div>
+<a onclick="javascript:slideshow.reset(event)" href="">Volver</a> </section></div>
 <div class="slide" id="landing-slide"
-	onclick="javascript:slideshow.reset()"><section>
+	onclick="javascript:slideshow.reset(event)"><section>
 <p class="title">&#161; NOS CASAMOS !</p>
 
 <ul style="list-style-type: none; text-align: left;">
@@ -112,38 +112,46 @@ avisadnos</p>
 	<li>o... <span id="up-arrow" class="arrows">c&oacute;mo eramos</span></li>
 </ul>
 <div id="weddingDate">20 de Agosto de 2011</div>
-<img style="margin-top: -20px" src="images/default.jpg" /> </section></div>
+<img style="margin-top: -20px" src="images/weddingFlowers.jpg" /> </section></div>
 
 <div class="slide" id="right-slide"
 	onclick="javascript:slideshow.next()"><section> <header>
 <p>Hemos elegido la Iglesia de la Santa Vera Cruz</p>
 </header>
-<div class="figure"><img src="images/VeraCruz.jpg" class="image"
+<div class="figure"><img src="images/ChurchVeraCruz.jpg" class="image"
 	onclick="javascript:createPanel(this);" /> <span class="caption"> Este
 es el aspecto del exterior de la iglesia </span></div>
-<div class="figure"><img src="images/VirgenVeraCruz.jpg"
+<div class="figure"><img src="images/ChurchVirgenVeraCruz.jpg"
 	onclick="javascript:createPanel(this);" class="image" /> <span
 	class="caption"> La Virgen de la Vera Cruz </span></div>
-<div class="figure"><img src="images/MapaVeraCruz.jpg" class="image"
-	onclick="javascript:createPanel(this);" /> <span class="caption"> En
-este mapa pod&eacute;is ver la situaci&oacute;n de la iglesia con
-respecto a las dos entradas desde la Avenida Salamanca </span></div>
+<div class="figure"><img src="images/ChurchMapaVeraCruz.jpg"
+	class="image" onclick="javascript:createPanel(this);" /> <span
+	class="caption"> En este mapa pod&eacute;is ver la situaci&oacute;n de
+la iglesia con respecto a las dos entradas desde la Avenida Salamanca </span></div>
 <p style="clear: both">La iglesia dispone de un banco de alimentos por
 lo que no permite tirar comida: arroz, legumbres...</p>
-<a onclick="javascript:slideshow.reset()" href="">Volver</a> </section></div>
+<a onclick="javascript:slideshow.reset(event)" href="">Volver</a> </section></div>
 
 <div class="slide vertical " onclick="javascript:slideshow.up()"
 	id="up-slide"><section><header>
 <p>As&iacute; eramos</p>
 </header>
-<div class="figure"><img src="images/YoungCris.jpg" class="image"
+<div class="figure"><img src="images/PicYoungCris.jpg" class="image"
 	onclick="javascript:createPanel(this);" /> <span class="caption">
 Cristina hace 1 d&eacute;cada </span></div>
-<div class="figure"><img src="images/YoungCrisRuben.jpg"
+<div class="figure"><img src="images/PicYoungRuben.jpg" class="image"
+	onclick="javascript:createPanel(this);" /> <span class="caption">
+Rub&eacute;n hace 1 d&eacute;cada </span></div>
+<div class="figure"><img src="images/PicYoungCrisRuben.jpg"
 	onclick="javascript:createPanel(this);" class="image" /> <span
 	class="caption"> Nuestra primera escapada</span></div>
-<div style="clear: both"><a onclick="javascript:slideshow.reset()"
-	href="">Volver</a></div>
+<div class="figure"><img src="images/PicBothTogether.jpg"
+	onclick="javascript:createPanel(this);" class="image" /> <span
+	class="caption"> Los dos juntos </span></div>
+<div class="figure"><img src="images/PicComunionEnrique.jpg"
+	onclick="javascript:createPanel(this);" class="image" /> <span
+	class="caption"> De comuni&oacute;n </span></div>
+<div><a onclick="javascript:slideshow.reset(event)" href="">Volver</a></div>
 </section></div>
 <script language="JavaScript" src="js/panel.js"></script> <script
 	language="JavaScript" src="js/utilities.js"></script> <script
