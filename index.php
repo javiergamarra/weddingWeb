@@ -9,6 +9,15 @@
 <link href="css/themeMorado.css" class="theme" rel="stylesheet" />
 <script type="text/javascript">
 
+document.createElement('header');
+document.createElement('hgroup');
+document.createElement('nav');
+document.createElement('menu');
+document.createElement('section');
+document.createElement('article');
+document.createElement('aside');
+document.createElement('footer');
+
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-20771666-3']);
   _gaq.push(['_trackPageview']);
