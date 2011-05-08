@@ -4,9 +4,9 @@
 <meta charset="utf-8" />
 <title>Ruben y Cristina</title>
 <link href="css/base.css" rel="stylesheet" />
-<link href="css/theme1.css" class="theme" rel="stylesheet" />
-<link href="css/theme2.css" class="theme" rel="stylesheet" />
-<link href="css/theme9.css" class="theme" rel="stylesheet" />
+<link href="css/themeAzul.css" class="theme" rel="stylesheet" />
+<link href="css/themeRojo.css" class="theme" rel="stylesheet" />
+<link href="css/themeMorado.css" class="theme" rel="stylesheet" />
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
