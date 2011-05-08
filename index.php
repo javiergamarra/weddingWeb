@@ -49,41 +49,7 @@ while ($row = mysql_fetch_array($result)) {
 }
 
 
-?> <script type="text/javascript" src="js/jquery-1.6.js"></script> <script
-	type="text/javascript">
-			$(function() {
-				//retrieve comments to display on page
-				$.getJSON("comment.php?jsoncallback=?", function(data) {
-					for (var x = 0; x < data.length; x++) {
-						$("<hr>").appendTo("#comments");
-					}
-				});	
-				
-				//add click handler for button
-				$("#add").click(function() {
-				
-					//define ajax config object
-					var ajaxOpts = {
-						type: "post",
-						url: "addComment.php",
-						data: "&email=" + $("#leaveComment").find("input").val() + "&description=" + $("#leaveComment").find("textarea").val(),
-						success: function(data) {
-							//create a container for the new comment
-							var div = $("<div>").addClass("row").appendTo("#comments");
-							//add author name and comment to container
-							$("<label>").text($("#leaveComment").find("input").val()).appendTo(div);
-							$("<div>").addClass("comment").text($("#leaveComment").find("textarea").val()).appendTo(div);
-							//empty inputs
-							$("#leaveComment").find("input").val("");
-							$("#leaveComment").find("textarea").val("");
-						}
-					};
-					
-					$.ajax(ajaxOpts);
-				
-				});		
-			});			
-		</script> <a onclick="javascript:slideshow.reset(event)" href="">Volver</a>
+?> </script> <a onclick="javascript:slideshow.reset(event)" href="">Volver</a>
 </section></div>
 
 <div class="slide" id="left-slide" onclick="javascript:slideshow.prev()"><section>
@@ -102,7 +68,7 @@ camino para ir de la iglesia al hotel </span></div>
 avisadnos</p>
 <p>El hotel ofrece un precio especial en habitaciones para invitados</p>
 <a onclick="javascript:slideshow.reset(event)" href="">Volver</a> </section></div>
-<div class="slide" id="landing-slide"
+<div class="slide current" id="landing-slide"
 	onclick="javascript:slideshow.reset(event)"><section>
 <p class="title">&#161; NOS CASAMOS !</p>
 
