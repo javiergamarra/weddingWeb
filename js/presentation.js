@@ -57,7 +57,6 @@ SlideShow.prototype = {
 		  _update: function(slide) {
 			  this.current = (slide) ? slide.id : this.current;
   		  var index = this._getCurrentIndex();
-  		  window.location.hash = this.current;
   		  var downSlide =this._slides[0];
   		  var leftSlide =this._slides[1];
   		  var centerSlide =this._slides[2];
@@ -166,13 +165,13 @@ SlideShow.prototype = {
 		        this.prev(); break;
 		      case 38: // space
 		        this.up(); break;
-//		      case 32: // space
+// case 32: // space
 		      case 39: // right arrow
 		        this.next(); break;
 		      case 40: // down arrow
 		        this.down(); break;
-//		    case 84: // T
-//              this.changeTheme(); break;
+// case 84: // T
+// this.changeTheme(); break;
 		    }
 		  },
 		};
