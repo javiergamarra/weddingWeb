@@ -242,8 +242,9 @@ section {
 }
 
 #comments {
-	overflow: scroll;
+	overflow-x: hidden;
 	height: 300px;
+	overflow-y:auto;
 }
 
 .comment {

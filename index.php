@@ -43,7 +43,7 @@ rubencab69@hotmail.com o criscasa81@gmail.com</p>
 <div id="comments"></div>
 <div id="leaveComment">
 <div class="row"><label>Tu nombre:</label><input type="text"></div>
-<div class="row"><label>Tu email:</label><input type="text"></div>
+<div class="row"><label>Tu email:</label><input id="email" type="text"></div>
 <div class="row"><label>Tu deseo:</label><textarea cols="10" rows="5"></textarea></div>
 <button id="add">Incluir deseo</button>
 </div>

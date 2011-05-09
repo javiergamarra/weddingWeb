@@ -18,7 +18,7 @@ $(function() {
 							+ "&description="
 							+ $("#leaveComment").find("textarea").val()
 							+ "&email="
-							+ $("#leaveComment").find("input").val(),
+							+ $("#email").val(),
 					success : function(data) {
 						var div = $("<div>").addClass("row").appendTo(
 								"#comments");
