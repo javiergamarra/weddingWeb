@@ -166,13 +166,13 @@ SlideShow.prototype = {
 		        this.prev(); break;
 		      case 38: // space
 		        this.up(); break;
-		      case 32: // space
+//		      case 32: // space
 		      case 39: // right arrow
 		        this.next(); break;
-		      case 40: // space
+		      case 40: // down arrow
 		        this.down(); break;
-		    case 84: // T
-              this.changeTheme(); break;
+//		    case 84: // T
+//              this.changeTheme(); break;
 		    }
 		  },
 		};

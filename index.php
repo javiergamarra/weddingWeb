@@ -35,31 +35,23 @@ document.createElement('footer');
 <div class="slides">
 <div class="slide vertical" id="down-slide"
 	onclick="javascript:slideshow.down()"><section> <header>
-<p>Comentarios...</p>
+<p>Deseos...</p>
 </header>
 <p>Para confirmar vuestra asistencia o cualquier duda estamos en
 rubencab69@hotmail.com o criscasa81@gmail.com</p>
 
 <div id="comments"></div>
 <div id="leaveComment">
-<div class="row"><label>Your Name:</label><input type="text"></div>
-<div class="row"><label>Comment:</label><textarea cols="10" rows="5"></textarea></div>
-<button id="add">Add</button>
+<div class="row"><label>Tu nombre:</label><input type="text"></div>
+<div class="row"><label>Tu email:</label><input type="text"></div>
+<div class="row"><label>Tu deseo:</label><textarea cols="10" rows="5"></textarea></div>
+<button id="add">Incluir deseo</button>
 </div>
-<?php
-$link = mysql_connect("localhost", "root");
-mysql_select_db("rubenycristina", $link);
-$result = mysql_query("SELECT * from comentarios", $link);
-$x = 1;
-while ($row = mysql_fetch_array($result)) {
-	$comments[$x] = array("email" => $row["email"], "description" => $row["description"]);
-	$x = $x++;
-	echo $row;
-}
-
-
-?> </script> <a onclick="javascript:slideshow.reset(event)" href="">Volver</a>
-</section></div>
+<script type="text/javascript" src="js/jquery-1.6.js"></script> <script
+	src="js/wishes.js" type="text/javascript">
+					
+		</script> </script> <a onclick="javascript:slideshow.reset(event)"
+	href="">Volver</a> </section></div>
 
 <div class="slide" id="left-slide" onclick="javascript:slideshow.prev()"><section>
 <header>

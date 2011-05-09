@@ -82,6 +82,8 @@ header {
 	-moz-transform: scale(1.0);
 	-o-transform: scale(1.0);
 	opacity: 1.0;
+	height: auto;
+	min-height: 650px;
 }
 
 .arrows {
@@ -237,4 +239,52 @@ section {
 
 .textAlign {
 	text-align: right;
+}
+
+#comments {
+	overflow: scroll;
+	height: 300px;
+}
+
+.comment {
+	font: 20px Verdana, sans-serif;
+	background-color: #d4d7d6;
+	padding: 5px;
+}
+
+#leaveComment {
+	font: 20px Verdana, sans-serif;
+	position: relative;
+}
+
+.row {
+	padding-left: 5px;
+	clear: both;
+	overflow: hidden;
+	padding-top: 5px;
+}
+
+.row label {
+	font: 20px Verdana, sans-serif;
+	width: 180px;
+	text-align: left;
+	display: block;
+	float: left;
+	font-weight: bold;
+	padding-top: 5px;
+}
+
+.row input,.row textarea,.row div {
+	padding-top: 5px;
+	width: 600px;
+	display: block;
+	float: left;
+}
+
+#add {
+	position: absolute;
+	bottom: 5px;
+	left: 30px;
+	font-weight: bold;
+	font-size: 20px;
 }
