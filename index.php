@@ -49,8 +49,7 @@ rubencab69@hotmail.com o criscasa81@gmail.com</p>
 </div>
 <script type="text/javascript" src="js/jquery-1.6.js"></script> <script
 	src="js/wishes.js" type="text/javascript">
-					
-		</script> </script> <a onclick="javascript:slideshow.reset(event)"
+		</script> <a onclick="javascript:slideshow.reset(event)"
 	href="">Volver</a> </section></div>
 
 <div class="slide" id="left-slide" onclick="javascript:slideshow.prev()"><section>
@@ -120,10 +119,11 @@ Rub&eacute;n hace 1 d&eacute;cada </span></div>
 	class="caption"> De comuni&oacute;n </span></div>
 <div><a onclick="javascript:slideshow.reset(event)" href="">Volver</a></div>
 </section></div>
-<script language="JavaScript" src="js/panel.js"></script> <script
-	language="JavaScript" src="js/utilities.js"></script> <script
-	language="JavaScript" src="js/slide.js"></script> <script
-	language="JavaScript" src="js/presentation.js"></script>
+</div></div>
+<script  src="js/panel.js"></script> <script
+	 src="js/utilities.js"></script> <script
+	 src="js/slide.js"></script> <script
+	 src="js/presentation.js"></script>
 
 </body>
 </html>
