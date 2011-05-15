@@ -29,7 +29,7 @@ var query = function(query) {
 }
 
 var queryAll = function(query) {
-	return toArray(document.querySelectorAll(query));
+	return toArray($(query));
 };
 
 var addClass = function(node, style) {
