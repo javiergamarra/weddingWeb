@@ -46,9 +46,7 @@ rubencab69@hotmail.com o criscasa81@gmail.com</p>
 <div class="row"><label>Tu deseo:</label><textarea cols="10" rows="5"></textarea></div>
 <button id="add">Incluir deseo</button>
 </div>
-<script type="text/javascript" src="js/jquery-1.6.js"></script> <script
-	src="js/wishes.js" type="text/javascript">
-		</script> <a href="">Volver</a> </section></div>
+<a href="">Volver</a> </section></div>
 
 <div class="slide left-arrow" id="left-slide"><section> <header>
 <p>Comeremos en el Hotel la Vega</p>
@@ -115,10 +113,12 @@ Rub&eacute;n hace 1 d&eacute;cada </span></div>
 </section></div>
 </div>
 </div>
+<script src="js/jquery-1.6.js"></script>
 <script src="js/panel.js"></script>
 <script src="js/utilities.js"></script>
 <script src="js/slide.js"></script>
 <script src="js/presentation.js"></script>
+<script src="js/wishes.js" type="text/javascript" />
 
 </body>
 </html>
