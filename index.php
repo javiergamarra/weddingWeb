@@ -33,8 +33,7 @@ document.createElement('footer');
 <body>
 <div class="presentation" id="web">
 <div class="slides">
-<div class="slide vertical" id="down-slide"
-	onclick="javascript:slideshow.down()"><section> <header>
+<div class="slide vertical down-arrow" id="down-slide"><section> <header>
 <p>Deseos...</p>
 </header>
 <p>Para confirmar vuestra asistencia o cualquier duda estamos en
@@ -49,11 +48,9 @@ rubencab69@hotmail.com o criscasa81@gmail.com</p>
 </div>
 <script type="text/javascript" src="js/jquery-1.6.js"></script> <script
 	src="js/wishes.js" type="text/javascript">
-		</script> <a onclick="javascript:slideshow.reset(event)"
-	href="">Volver</a> </section></div>
+		</script> <a href="">Volver</a> </section></div>
 
-<div class="slide" id="left-slide" onclick="javascript:slideshow.prev()"><section>
-<header>
+<div class="slide left-arrow" id="left-slide"><section> <header>
 <p>Comeremos en el Hotel la Vega</p>
 </header>
 <div class="figure"><img src="images/HotelLaVega.jpg" class="image"
@@ -67,21 +64,19 @@ camino para ir de la iglesia al hotel </span></div>
 <p style="clear: both">Si padec&eacute;is alguna alergia alimentaria,
 avisadnos</p>
 <p>El hotel ofrece un precio especial en habitaciones para invitados</p>
-<a onclick="javascript:slideshow.reset(event)" href="">Volver</a> </section></div>
-<div class="slide current" id="landing-slide"
-	onclick="javascript:slideshow.reset(event)"><section>
+<a href="">Volver</a> </section></div>
+<div class="slide current" id="landing-slide"><section>
 <p class="title">&#161; NOS CASAMOS !</p>
 
 <ul style="list-style-type: none; text-align: left;">
-	<li>Seguro que quieres saber... <span id="right-arrow" class="arrows">d&oacute;nde</span></li>
-	<li>o en que... <span id="left-arrow" class="arrows">restaurante</span></li>
-	<li>o... <span id="up-arrow" class="arrows">c&oacute;mo eramos</span></li>
+	<li>Seguro que quieres saber... <span class="right-arrow arrows">d&oacute;nde</span></li>
+	<li>o en que... <span class="left-arrow arrows">restaurante</span></li>
+	<li>o... <span class="up-arrow arrows">c&oacute;mo eramos</span></li>
 </ul>
 <div id="weddingDate">20 de Agosto de 2011</div>
 <img style="margin-top: -20px" src="images/weddingFlowers.jpg" /> </section></div>
 
-<div class="slide" id="right-slide"
-	onclick="javascript:slideshow.next()"><section> <header>
+<div class="slide right-arrow" id="right-slide"><section> <header>
 <p>Hemos elegido la Iglesia de la Santa Vera Cruz</p>
 </header>
 <div class="figure"><img src="images/ChurchVeraCruz.jpg" class="image"
@@ -96,10 +91,9 @@ es el aspecto del exterior de la iglesia </span></div>
 la iglesia con respecto a las dos entradas desde la Avenida Salamanca </span></div>
 <p style="clear: both">La iglesia dispone de un banco de alimentos por
 lo que no permite tirar comida: arroz, legumbres...</p>
-<a onclick="javascript:slideshow.reset(event)" href="">Volver</a> </section></div>
+<a href="">Volver</a> </section></div>
 
-<div class="slide vertical " onclick="javascript:slideshow.up()"
-	id="up-slide"><section><header>
+<div class="slide vertical up-arrow" id="up-slide"><section><header>
 <p>As&iacute; eramos</p>
 </header>
 <div class="figure"><img src="images/PicYoungCris.jpg" class="image"
@@ -117,13 +111,14 @@ Rub&eacute;n hace 1 d&eacute;cada </span></div>
 <div class="figure"><img src="images/PicComunionEnrique.jpg"
 	onclick="javascript:createPanel(this);" class="image" /> <span
 	class="caption"> De comuni&oacute;n </span></div>
-<div><a onclick="javascript:slideshow.reset(event)" href="">Volver</a></div>
+<div><a href="">Volver</a></div>
 </section></div>
-</div></div>
-<script  src="js/panel.js"></script> <script
-	 src="js/utilities.js"></script> <script
-	 src="js/slide.js"></script> <script
-	 src="js/presentation.js"></script>
+</div>
+</div>
+<script src="js/panel.js"></script>
+<script src="js/utilities.js"></script>
+<script src="js/slide.js"></script>
+<script src="js/presentation.js"></script>
 
 </body>
 </html>

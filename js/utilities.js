@@ -32,10 +32,8 @@ var queryAll = function(query) {
 	return toArray(document.querySelectorAll(query));
 };
 
-var addClass = function(node, classStr) {
-	node.className = 'slide ' + classStr;
-};
-
-var removeClass = function(node) {
-	node.className = 'slide';
+var addClass = function(node, style) {
+	$(node).removeClass('current');
+	$(node).removeClass('very'.style);
+	$(node).addClass(style);
 };

@@ -9,6 +9,7 @@ function createPanel(_element) {
 	showPanel(true, id);
 }
 
+
 function makePanel(_panelId, _fatherId, _element) {
 	var panelDiv = document.createElement('div');
 	panelDiv.setAttribute('id', _panelId);
@@ -17,6 +18,7 @@ function makePanel(_panelId, _fatherId, _element) {
 	panelDiv.appendChild(createContent(_element));
 	document.getElementById(_fatherId).appendChild(panelDiv);
 };
+
 
 function createCloseImage() {
 	var closeImage = document.createElement('img');
