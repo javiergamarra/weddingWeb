@@ -33,7 +33,7 @@ var queryAll = function(query) {
 };
 
 var addClass = function(node, style) {
-	$(node).removeClass('current');
-	$(node).removeClass('very'.style);
+	$(node).removeClass();
+	$(node).addClass('slide');
 	$(node).addClass(style);
 };
