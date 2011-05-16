@@ -42,10 +42,11 @@ avisadnos</p>
 
 <div class="slide current" id="landing-slide"><section>
 <p class="title">&#161; NOS CASAMOS !</p>
-<ul style="list-style-type: none; text-align: left;">
+<ul style="list-style-type: none; text-align: left; margin-top: -30px"">
 	<li>Seguro que quieres saber... <span class="arrows right-arrow">d&oacute;nde</span></li>
 	<li>o en que... <span class="arrows left-arrow">restaurante</span></li>
 	<li>o... <span class="arrows up-arrow">c&oacute;mo eramos</span></li>
+	<li>e... <span class="arrows down-arrow">incluir un deseo</span></li>
 </ul>
 <div id="weddingDate">20 de Agosto de 2011</div>
 <img style="margin-top: -20px" src="images/weddingFlowers.jpg" /> </section></div>
