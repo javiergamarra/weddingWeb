@@ -1,5 +1,4 @@
-$(function() {
-
+function showComments() {
 	$.getJSON("comments.php?jsoncallback=?", function(data) {
 		for ( var x = 0; x < data.length; x++) {
 			var div = $("<div>").addClass("row").appendTo("#comments");
@@ -8,7 +7,8 @@ $(function() {
 					div);
 		}
 	});
-
+}
+function addHandlerNewComment() {
 	$("#add").click(
 			function() {
 				var ajaxOpts = {
@@ -17,8 +17,7 @@ $(function() {
 					data : "&name=" + $("#leaveComment").find("input").val()
 							+ "&description="
 							+ $("#leaveComment").find("textarea").val()
-							+ "&email="
-							+ $("#email").val(),
+							+ "&email=" + $("#email").val(),
 					success : function(data) {
 						var div = $("<div>").addClass("row").appendTo(
 								"#comments");
@@ -34,4 +33,5 @@ $(function() {
 				};
 				$.ajax(ajaxOpts);
 			});
-});
+
+}

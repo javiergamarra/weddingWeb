@@ -1,7 +1,8 @@
 <?php
+include("config.php");
 
-$server = mysql_connect("localhost", "dscgfqdw_ruben","I1l4f8a");
-$connection = mysql_select_db("dscgfqdw_rubenycristina", $server);
+$server = mysql_connect(SERVER, USER,PASSWORD);
+$connection = mysql_select_db(DATABASE, $server);
 $query = mysql_query("SELECT * FROM comentarios order by date desc");
 
 for ($x = 0, $numrows = mysql_num_rows($query); $x < $numrows; $x++) {

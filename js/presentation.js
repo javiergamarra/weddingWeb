@@ -33,7 +33,7 @@ var SlideShow = function(slides) {
 	this._update();
 };
 
-//FIXME REFACTOR NEEDED!!!!!
+// FIXME REFACTOR NEEDED!!!!!
 SlideShow.prototype = {
 	_nameSlides : [ 'down-slide', 'left-slide', 'landing-slide', 'right-slide',
 			'up-slide' ],
@@ -165,4 +165,6 @@ var slideshow;
 
 $(document).ready(function() {
 	slideshow = new SlideShow(queryAll('.slide'));
+	showComments();
+	addHandlerNewComment();
 });

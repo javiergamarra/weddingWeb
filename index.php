@@ -87,8 +87,8 @@ De comuni&oacute;n </span></div>
 <script src="js/panel.js"></script>
 <script src="js/utilities.js"></script>
 <script src="js/slide.js"></script>
+<script src="js/wishes.js"></script>
 <script src="js/presentation.js"></script>
-<script src="js/wishes.js" />
 
 </body>
 </html>
