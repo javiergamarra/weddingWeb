@@ -68,16 +68,18 @@ lo que no permite tirar comida: arroz, legumbres...</p>
 <div class="slide up-arrow" id="up-slide"><section><header>
 <p>As&iacute; eramos</p>
 </header>
-<div class="figure"><img src="images/PicYoungCris.jpg" /> <span>
-Cristina hace 1 d&eacute;cada </span></div>
-<div class="figure"><img src="images/PicYoungRuben.jpg" /> <span>
-Rub&eacute;n hace 1 d&eacute;cada </span></div>
 <div class="figure"><img src="images/PicYoungCrisRuben.jpg" /> <span>
 Nuestra primera escapada</span></div>
+<div class="figure"><img src="images/PicYoungCris.jpg" /> <span>
+Cristina hace 1 d&eacute;cada </span></div>
 <div class="figure"><img src="images/PicBothTogether.jpg" /> <span> Los
 dos juntos </span></div>
+<div class="figure"><img src="images/PicYoungRuben.jpg" /> <span>
+Rub&eacute;n hace 1 d&eacute;cada </span></div>
 <div class="figure"><img src="images/PicComunionEnrique.jpg" /> <span>
 De comuni&oacute;n </span></div>
+<div class="figure"><img src="images/PicRubenGreyCar.jpg" /> <span>
+Rub&eacute;n arreglando... </span></div>
 <div><a href="">Volver</a></div>
 </section></div>
 
