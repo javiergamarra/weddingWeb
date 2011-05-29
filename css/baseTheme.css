@@ -238,6 +238,16 @@ section {
 	max-height: 600px;
 }
 
+.maps .panelImage  {
+	max-width: 800px;
+	max-height: 800px;
+}
+
+.panel.maps {
+	width: 900px;
+	height: 800px;
+}
+
 .textAlign {
 	text-align: right;
 }

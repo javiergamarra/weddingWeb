@@ -13,7 +13,7 @@ function createPanel(_element) {
 function makePanel(_panelId, _fatherId, _element) {
 	var panelDiv = document.createElement('div');
 	panelDiv.setAttribute('id', _panelId);
-	panelDiv.className = "panel";
+	panelDiv.className = "panel " + _element.className;
 	panelDiv.appendChild(createCloseImage());
 	panelDiv.appendChild(createContent(_element));
 	document.getElementById(_fatherId).appendChild(panelDiv);

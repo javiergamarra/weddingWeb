@@ -33,7 +33,7 @@ rubencab69@hotmail.com o criscasa81@gmail.com</p>
 </header>
 <div class="figure"><img src="images/HotelLaVega.jpg" /> <span> Este es
 el hotel La Vega, la fachada frontal </span></div>
-<div class="figure"><img src="images/HotelMapaIglesia.jpg" /><span> En
+<div class="figure"><img src="images/HotelMapaIglesia.jpg" class="maps"/><span> En
 este mapa se muestra el camino para ir de la iglesia al hotel </span></div>
 <p style="clear: both">Si padec&eacute;is alguna alergia alimentaria,
 avisadnos</p>
@@ -58,7 +58,7 @@ avisadnos</p>
 es el aspecto del exterior de la iglesia </span></div>
 <div class="figure"><img src="images/ChurchVirgenVeraCruz.jpg" /> <span>
 La Virgen de la Vera Cruz </span></div>
-<div class="figure"><img src="images/ChurchMapaVeraCruz.jpg" /> <span>
+<div class="figure"><img src="images/ChurchMapaVeraCruz.jpg" class="maps" /> <span>
 En este mapa pod&eacute;is ver la situaci&oacute;n de la iglesia con
 respecto a las dos entradas desde la Avenida Salamanca </span></div>
 <p style="clear: both">La iglesia dispone de un banco de alimentos por
