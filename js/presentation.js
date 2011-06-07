@@ -28,7 +28,7 @@ var SlideShow = function(slides) {
 		_t.down();
 	});
 	$(".figure").click(function(event) {
-		createPanel(event.target)
+		createPanel('imagePanel',event.target)
 	});
 	this._update();
 };

@@ -33,11 +33,14 @@ rubencab69@hotmail.com o criscasa81@gmail.com</p>
 </header>
 <div class="figure"><img src="images/HotelLaVega.jpg" /> <span> Este es
 el hotel La Vega, la fachada frontal </span></div>
-<div class="figure"><img src="images/HotelMapaIglesia.jpg" class="maps"/><span> En
-este mapa se muestra el camino para ir de la iglesia al hotel </span></div>
+<div class="figure"><img src="images/HotelMapaIglesia.jpg" class="maps" /><span>
+En este mapa se muestra el camino para ir de la iglesia al hotel </span></div>
+<input id="hotelAddress" type="textbox" value="desde Valladolid..."> <input
+	type="button" value="Buscar!" onclick="calculateRouteToHotel()">
 <p style="clear: both">Si padec&eacute;is alguna alergia alimentaria,
 avisadnos</p>
-<p>El hotel ofrece un precio especial en habitaciones para invitados</p>
+<p>El hotel ofrece un precio especial en habitaciones para invitados.
+Est&aacute; en la Carretera Salamanca, KM 131</p>
 <a href="">Volver</a> </section></div>
 
 <div class="slide current" id="landing-slide"><section>
@@ -58,11 +61,16 @@ avisadnos</p>
 es el aspecto del exterior de la iglesia </span></div>
 <div class="figure"><img src="images/ChurchVirgenVeraCruz.jpg" /> <span>
 La Virgen de la Vera Cruz </span></div>
-<div class="figure"><img src="images/ChurchMapaVeraCruz.jpg" class="maps" /> <span>
-En este mapa pod&eacute;is ver la situaci&oacute;n de la iglesia con
-respecto a las dos entradas desde la Avenida Salamanca </span></div>
+<div class="figure"><img src="images/ChurchMapaVeraCruz.jpg"
+	class="maps" /> <span> En este mapa pod&eacute;is ver la
+situaci&oacute;n de la iglesia con respecto a las dos entradas desde la
+Avenida Salamanca </span></div>
 <p style="clear: both">La iglesia dispone de un banco de alimentos por
 lo que no permite tirar comida: arroz, legumbres...</p>
+<p>Est&aacute; en la calle Plater&iacute;as, Valladolid. <input
+	id="churchAddress" type="textbox" value="Villadangos del P&aacute;ramo">
+<input type="button" value="Buscar!" onclick="calculateRouteToChurch()"></p>
+
 <a href="">Volver</a> </section></div>
 
 <div class="slide up-arrow" id="up-slide"><section><header>
@@ -86,6 +94,8 @@ Rub&eacute;n arreglando... </span></div>
 </div>
 </div>
 <script src="js/jquery-1.6.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="js/map.js"></script>
 <script src="js/panel.js"></script>
 <script src="js/utilities.js"></script>
 <script src="js/slide.js"></script>
