@@ -141,14 +141,14 @@ section {
 }
 
 .title {
-	font-size: 155px;
+	font-size: 80px;
 	text-align: center;
 }
 
 #weddingDate {
 	color: white;
 	position: relative;
-	bottom: -170px;
+	bottom: -150px;
 	left: -200px;
 }
 
@@ -222,7 +222,7 @@ section {
 	background-color: #3a2855;
 	z-index: 100;
 	left: 0px;
-	position: relative;
+	position: absolute;
 	top: 20px;
 	text-align: center;
 	left: 40px;
